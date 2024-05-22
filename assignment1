@@ -1,0 +1,189 @@
+Variables:
+1.Rules for Python variables
+Rules for python variables:-
+1.it will allow only case sensitive
+2.variables not start with keywords
+3.it allow digits(0-9) and alphabets(a-z,A-Z)
+4.variables should not start with zero
+5.underscore(_)is allowed if it is represented before any variable it is considered as private variable
+===========================================================================================================
+2.Declaration and Initialization of Variables
+Declaration and intialization of variables
+a=10
+print(type(a))
+<class int>
+===============================================
+3.Redeclaring variables in Python
+a=10
+a=20
+print(a)
+output:-20
+==============================================
+4.Python Assign Values to Multiple Variables
+a=10
+b=10
+c=10
+print("a value is:",a)
+print("b value is:",b)
+print("c value is:",c)
+output:-
+a value is: 10
+b value is: 10
+c value is: 10
+
+a=b=c=10
+print(a,b,c,sep=",")
+output:-
+10,10,10
+=================================================== 
+5.Assigning different values to multiple variables
+a=10
+b=12
+c=13
+print("a value is:",a)
+print("b value is:",b)
+print("c value is:",c)
+output:-
+a value is: 10
+b value is: 12
+c value is: 13
+==========================================================
+6.Can We Use the Same Name for Different Types? 
+yes we can write same name for diff types 
+a=10
+print(type(a))
+a=10.5
+print(type(a))
+a="rohi"
+print(type(a))
+a=[0,1,2,3]
+print(type(a))
+a=(4,5,6)
+print(type(a))
+a=set()
+print(type(a))
+a={"name":"rohi","age":"21"}
+print(type(a))
+output:-
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'list'>
+<class 'tuple'>
+<class 'set'>
+<class 'dict'>
+================================================================================================
+7.What is variable interpolation in Python?
+Variable interpolation in Python refers to the process of embedding variables directly within strings.
+str.format()method
+=============================================================================
+Datatypes:
+1.What are the built-in data types in Python?
+Numeric data types:
+1.int
+2.float
+3.complex
+4.boolean
+seuential data types:
+1.list
+2.string
+3.set
+4.frozen set
+5.tuple
+6.dictionaries
+7.range
+8.None
+9.bytes and bytesarray
+=====================================================
+2.Explain the difference between lists and tuples in Python.
+diff b/w list and tuple
+list:
+1.list is mutable that means we can modify the data according to requirement 
+2.list is enclosed with []
+3.list allow duplicates
+4.list is ordered it will go through sequential manner
+tuple:
+1.tuple is immutable that means we can't modify any data once tuple object is created
+2.tuple is enclosed with ()
+3.tuple allow duplicates
+4.tuple is ordered it will go through sequential manner
+========================================================
+3.How can you convert a string to an integer in Python?
+#covert str to int
+str=input("enter string:")
+print(type(str))
+str1=int(input("enter string1:"))
+print(type(str1))
+output:-
+enter string:rohi
+<class 'str'>
+enter string1:10
+<class 'int'>
+===================================================================
+4.How do you check the data type of a variable in Python?
+By using type() function we can check the data type of variable
+=====================================================================================================
+5.Explain the concept of mutable and immutable data types in Python.
+In mutable we can able to modify the data like adding or remove the elements or insert the elements at particular index
+If it is immutable we can't modify any data 
+===================================================================================
+6.How can you create a dictionary in Python?
+name={"name1":"rohi","name2":"sai"}
+print(type(name))
+print(name["name1"])
+output:-
+<class 'dict'>
+rohi
+==========================================================================
+7.What is the purpose of the id() function in Python?
+a=10
+print(id(a))
+output:-139069829459144
+this will return an integer identification number for diff objects.
+========================================================================
+8.How do you remove an element from a list in Python?
+list=[1,5,6,60]
+list.remove(60)
+list.remove(1)
+print(list)
+output:-[5,6]
+(or)
+list=[1,5,6,60]
+list.remove(list[0])
+print(list)
+output:-[5,6,60]
+=============================================================
+9.What is the purpose of the len() function in Python?
+len()function will returns the length of the particular data type(list,tuple,string)
+==================================================================================
+10.How do you check if a variable is of a certain data type in Python?
+By using type() function we can check variable of certain data type in python
+=========================================================================
+11.What is a set in Python? How is it different from a list?
+set:-
+1.It wont allow duplicates
+2.it contains only unique elements
+3.set is mutable
+4.set is unordered collection of data
+5.set is enclosed with set() function or {}
+but in list it allow duplicates and list is ordered
+============================================================================
+12.How can you convert a list to a tuple in Python?
+list=[1,5,6]
+print(type(list))
+newlist=tuple(list)
+print(type(newlist))
+output:-
+<class 'list'>
+<class 'tuple'>
+================================================================
+13.How can you convert a float to an integer in Python?
+num=float(input("enter number:"))
+print(type(num))
+num1=int(input("enter number1:"))
+print(type(num1))
+output:-
+enter number:12
+<class 'float'>
+enter number1:34
+<class 'int'>
